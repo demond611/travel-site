@@ -1,0 +1,47 @@
+.feature-item {
+	
+	position: relative;
+	padding-bottom: 2.5rem;
+	
+
+	@mixin atSmall {
+		padding-left: 94px;
+	}
+
+	@mixin atMedium {
+		flex-basis: 45%;
+		box-sizing: border-box;
+	}
+
+	/* FLEXBOX FIX */
+	@mixin atLarge {
+		flex-basis: 45%;
+		box-sizing: border-box;
+	}
+
+
+	&__icon {
+		display: block;
+		margin: 0 auto;
+
+		@mixin atSmall {
+			position: absolute;
+			left: 0;
+		}
+	}
+
+	&__title {
+		font-size: 1.6rem;
+		font-weight: 300;
+		margin-bottom: .8rem;
+		margin-top: .7rem;
+		text-align: center;
+
+		@mixin atSmall {
+			font-size: 1.875rem;
+			margin-top: 1rem;
+			text-align: left;
+		}
+	}
+
+}
